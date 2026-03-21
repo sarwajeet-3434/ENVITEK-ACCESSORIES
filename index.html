@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envitek Power – Complete Lithium Battery Solutions</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📦 Minimum Order Quantities Apply &nbsp;|&nbsp; 🏭 B2B / Wholesale Store &nbsp;|&nbsp; GST Invoice Provided</span>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-box">Envitek Power</div>
+      <div class="logo-text">
+        <span class="logo-main">accessories</span>
+        <span class="logo-sub">complete lithium-ion solution</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Products</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="terms.html" class="nav-link">Terms & Conditions</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" onclick="toggleSearch()">🔍</button>
+      <button class="icon-btn cart-btn" onclick="toggleQuote()">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar" style="display:none">
+    <input type="text" id="searchInput" placeholder="Search products..." oninput="filterProducts()">
+  </div>
+</header>
+
+<!-- HERO BANNER -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-product">
+      <img src="https://via.placeholder.com/420x260/1a1a2e/00d4ff?text=Battery+Pack+Tester" alt="DSF20 Tester" class="hero-img">
+    </div>
+    <div class="hero-info">
+      <p class="hero-tag">FEATURED PRODUCT</p>
+      <h1 class="hero-title">Li-Ion / Lead-Acid<br>Battery Pack Tester</h1>
+      <p class="hero-model">(9–99V / 10–20A) <strong>DSF20</strong></p>
+      <div class="hero-price">₹22,598/- <span>+GST</span></div>
+      <div class="hero-badges">
+        <span class="badge-stock">✅ IN STOCK NOW</span>
+        <span class="badge-gst">GST Invoice</span>
+      </div>
+      <button class="btn-primary" onclick="addToQuote('DSF20', 'Battery Pack Tester DSF20', 22598, 1)">Add to Quote</button>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY TABS -->
+<div class="cat-tabs" id="catTabs"></div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3 class="sidebar-title">Categories</h3>
+    <ul class="sidebar-list" id="sidebarList"></ul>
+  </aside>
+
+  <!-- PRODUCT AREA -->
+  <main class="product-area">
+    <div class="product-area-header">
+      <h2 class="section-title" id="sectionTitle">All Products</h2>
+      <div class="filter-bar">
+        <select id="priceFilter" onchange="filterProducts()">
+          <option value="">Price: All</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-list" id="productList"></div>
+  </main>
+
+  <!-- QUOTE PANEL -->
+  <aside class="quote-panel" id="quotePanel">
+    <h3 class="quote-title">📋 Quote</h3>
+    <div id="quoteItems" class="quote-items">
+      <div class="quote-empty">
+        <div class="quote-empty-icon">🛒</div>
+        <p>Quote is empty</p>
+      </div>
+    </div>
+    <div class="quote-footer" id="quoteFooter" style="display:none">
+      <div class="quote-total">Total (excl. GST): <strong id="quoteTotal">₹0</strong></div>
+      <button class="btn-primary btn-full" onclick="submitQuote()">📧 Send Quote Request</button>
+      <button class="btn-outline btn-full" onclick="clearQuote()">Clear All</button>
+    </div>
+  </aside>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- QUOTE MODAL (mobile) -->
+<div class="modal-overlay" id="modalOverlay" onclick="toggleQuote()" style="display:none"></div>
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
