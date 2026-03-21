@@ -3,7 +3,7 @@
 // ============================================================
 
 // 👇 CHANGE THIS to your WhatsApp number (country code + number, no + or spaces)
-const WHATSAPP_NUMBER = "919270155430";
+const WHATSAPP_NUMBER = "917887957388";
 
 let activeCategory = "all";
 let quoteItems = JSON.parse(localStorage.getItem("arb_quote") || "[]");
@@ -250,13 +250,13 @@ function sendToWhatsApp() {
   const total = quoteItems.reduce((s, i) => s + i.price * i.qty, 0);
   const gst   = Math.round(total * 0.18);
 
-  let msg = `🔋 *RFQ – ARB Accessories*\n`;
+  let msg = ` *RFQ – Envitek Power Accessories*\n`;
   msg += `━━━━━━━━━━━━━━━━━━━━\n`;
-  msg += `👤 *Name:* ${name}\n`;
-  if (phone) msg += `📞 *Phone:* ${phone}\n`;
-  msg += `📅 *Date:* ${new Date().toLocaleDateString("en-IN", { day:"2-digit", month:"short", year:"numeric" })}\n`;
+  msg += ` *Name:* ${name}\n`;
+  if (phone) msg += `*Phone:* ${phone}\n`;
+  msg += `*Date:* ${new Date().toLocaleDateString("en-IN", { day:"2-digit", month:"short", year:"numeric" })}\n`;
   msg += `━━━━━━━━━━━━━━━━━━━━\n`;
-  msg += `📦 *Items Requested:*\n\n`;
+  msg += ` *Items Requested:*\n\n`;
 
   quoteItems.forEach((i, idx) => {
     msg += `*${idx + 1}. ${i.name}*\n`;
@@ -266,9 +266,9 @@ function sendToWhatsApp() {
   });
 
   msg += `━━━━━━━━━━━━━━━━━━━━\n`;
-  msg += `💰 *Amount (excl. GST):* ₹${total.toLocaleString()}\n`;
-  msg += `🧾 *GST @18%:* ₹${gst.toLocaleString()}\n`;
-  msg += `✅ *Grand Total:* ₹${(total + gst).toLocaleString()}\n`;
+  msg += ` *Amount (excl. GST):* ₹${total.toLocaleString()}\n`;
+  msg += ` *GST @18%:* ₹${gst.toLocaleString()}\n`;
+  msg += ` *Grand Total:* ₹${(total + gst).toLocaleString()}\n`;
   msg += `━━━━━━━━━━━━━━━━━━━━\n`;
   msg += `_Kindly confirm stock availability and share GST invoice. Thank you!_`;
 

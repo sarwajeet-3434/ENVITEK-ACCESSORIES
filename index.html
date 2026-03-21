@@ -3,9 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Envitek Power – Complete Lithium Battery Solutions</title>
+<title>Envitek Power Accessories – Complete Lithium Battery Solutions</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── WHATSAPP BUTTON ──────────────────────────────────── */
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+}
+.btn-whatsapp:hover { background: #1fb558; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(37,211,102,0.3); }
+
+/* ── WHATSAPP MODAL ───────────────────────────────────── */
+.wa-modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 600;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.wa-modal {
+  background: #0e1220;
+  border: 1px solid #1f2840;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.8);
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.wa-modal-header {
+  background: linear-gradient(135deg, #075e54, #128c7e);
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.wa-icon {
+  width: 48px; height: 48px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.wa-modal-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+.wa-modal-sub { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 2px; }
+.wa-close {
+  margin-left: auto;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.wa-close:hover { background: rgba(255,255,255,0.3); }
+
+.wa-modal-body { padding: 22px; }
+
+/* Summary inside modal */
+.wa-summary {
+  background: #141929;
+  border: 1px solid #1f2840;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  max-height: 160px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+.wa-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #1a2035;
+}
+.wa-summary-item:last-child { border-bottom: none; }
+.wa-item-name { color: #e8eaf0; font-weight: 500; flex: 1; line-height: 1.35; }
+.wa-item-detail { color: #ff6b35; font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.wa-summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #252a4a;
+  font-weight: 700;
+  font-size: 14px;
+}
+.wa-summary-total span { color: #00d4ff; }
+
+/* Fields */
+.wa-field { margin-bottom: 14px; }
+.wa-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a82a8;
+  margin-bottom: 6px;
+}
+.wa-req { color: #ff6b35; }
+.wa-optional { color: #4a5278; font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 11px; }
+.wa-input {
+  width: 100%;
+  background: #141929;
+  border: 1px solid #1f2840;
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: #e8eaf0;
+  font-size: 14px;
+  font-family: 'Barlow', sans-serif;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.wa-input:focus { border-color: #25d366; box-shadow: 0 0 0 3px rgba(37,211,102,0.1); }
+.wa-input.wa-error { border-color: #ff4545; animation: shake 0.3s ease; }
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  25%      { transform: translateX(-6px); }
+  75%      { transform: translateX(6px); }
+}
+
+/* Send button inside modal */
+.wa-send-btn {
+  width: 100%;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+.wa-send-btn:hover { background: #1fb558; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+.wa-disclaimer {
+  text-align: center;
+  font-size: 11px;
+  color: #4a5278;
+  margin-top: 12px;
+}
+</style>
 </head>
 <body>
 
@@ -32,6 +215,7 @@
       <a href="#" class="nav-link">Contact</a>
     </nav>
     <div class="header-actions">
+      <a href="admin.html" class="icon-btn" onclick="return promptAdmin()" style="text-decoration:none; font-size:13px; font-weight:600;">⚙ Admin</a>
       <button class="icon-btn" onclick="toggleSearch()">🔍</button>
       <button class="icon-btn cart-btn" onclick="toggleQuote()">
         🛒 <span class="cart-count" id="cartCount">0</span>
@@ -100,7 +284,10 @@
     </div>
     <div class="quote-footer" id="quoteFooter" style="display:none">
       <div class="quote-total">Total (excl. GST): <strong id="quoteTotal">₹0</strong></div>
-      <button class="btn-primary btn-full" onclick="submitQuote()">📧 Send Quote Request</button>
+      <button class="btn-whatsapp btn-full" onclick="submitQuote()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Send RFQ on WhatsApp
+      </button>
       <button class="btn-outline btn-full" onclick="clearQuote()">Clear All</button>
     </div>
   </aside>
@@ -109,9 +296,53 @@
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<!-- QUOTE MODAL (mobile) -->
+<!-- QUOTE PANEL OVERLAY (mobile) -->
 <div class="modal-overlay" id="modalOverlay" onclick="toggleQuote()" style="display:none"></div>
 
+<!-- WHATSAPP NAME MODAL -->
+<div class="wa-modal-bg" id="waModal" onclick="if(event.target===this)closeWaModal()">
+  <div class="wa-modal">
+    <div class="wa-modal-header">
+      <div class="wa-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </div>
+      <div>
+        <h3 class="wa-modal-title">Send RFQ via WhatsApp</h3>
+        <p class="wa-modal-sub">We'll receive your quote request instantly</p>
+      </div>
+      <button class="wa-close" onclick="closeWaModal()">✕</button>
+    </div>
+
+    <div class="wa-modal-body">
+      <!-- Live quote summary -->
+      <div class="wa-summary" id="waSummary"></div>
+
+      <div class="wa-field">
+        <label class="wa-label">Your Name <span class="wa-req">*</span></label>
+        <input class="wa-input" id="waName" type="text" placeholder="Enter your full name"
+               oninput="this.classList.remove('wa-error')"
+               onkeydown="if(event.key==='Enter')document.getElementById('waPhone').focus()">
+      </div>
+      <div class="wa-field">
+        <label class="wa-label">Phone Number <span class="wa-optional">(optional)</span></label>
+        <input class="wa-input" id="waPhone" type="tel" placeholder="+91 98765 43210"
+               onkeydown="if(event.key==='Enter')sendToWhatsApp()">
+      </div>
+
+      <button class="wa-send-btn" onclick="sendToWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Open WhatsApp &amp; Send
+      </button>
+      <p class="wa-disclaimer">You'll be redirected to WhatsApp. The message will be pre-filled — just hit Send.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function promptAdmin() {
+  return prompt("Enter admin password:") === "Envitek2024";
+}
+</script>
 <script src="db.js"></script>
 <script src="app.js"></script>
 </body>
