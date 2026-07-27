@@ -1083,6 +1083,351 @@ const DB = {
   image: "images/products/p090.jpg",
   description: "SOCKET L-TYPE FEMALE CONNECTOR – High-Quality Right-Angle Connector for electric vehicle charging systems and electrical wiring applications."
 },
+{
+  id: "p091",
+  category: "Miscellaneous",
+  name: "RIM with MAGNET 10 INCH",
+  price: 3450,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p091.jpg",
+  description: "RIM with MAGNET 10 INCH for Electric Scooter – High-Performance Wheel Component The RIM with MAGNET 10 INCH for Electric Scooter is a premium-quality wheel rim designed to enhance motor performance, stability, and efficiency in electric scooters. This specialized rim comes equipped with high-grade magnets, allowing seamless integration with hub motors for smooth and powerful operation. Built from durable and lightweight materials, this 10-inch rim ensures optimal power transmission, helping to improve torque, speed, and energy efficiency. Whether you're looking for a replacement part or an upgrade, this rim with magnet is an excellent choice for keeping your electric scooter running at its best."
+},
+
+{
+  id: "p092",
+  category: "Controllers & Wires",
+  name: "MOTOR CABLE 1200W ORANGE",
+  price: 450,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p092.jpg",
+  description: "MOTOR CABLE [1200W] (ORANGE) for Electric Scooter – High-Performance Power Cable The MOTOR CABLE [1200W] (ORANGE) for Electric Scooter is a premium-quality, high-conductivity power cable designed for 1200W electric scooter motors. This heavy-duty cable ensures efficient power transmission, minimal energy loss, and excellent durability. Engineered for electric scooters, e-bikes, and other EVs, this high-performance motor cable enhances the overall efficiency and safety of your electric vehicle."
+},
+
+{
+  id: "p093",
+  category: "Miscellaneous",
+  name: "TROTL (WATER-PRF) [DOUBLE PUSH]",
+  price: 199,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p093.jpg",
+  description: "[WP DOUBLE PUSH (WATERPRF)] Throttle for Electric Vehicle Experience enhanced control and superior performance with the [WP DOUBLE PUSH (WATERPRF)] Throttle for electric vehicles. Designed for durability and precision, this waterproof throttle is ideal for electric scooters, bikes, and other electric vehicles. Its advanced double-push mechanism ensures responsive acceleration and consistent performance in all weather conditions."
+},
+
+{
+  id: "p094",
+  category: "Miscellaneous",
+  name: "TROTL [DISPLAY WITH LOCK]",
+  price: 650,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p094.jpg",
+  description: "24V Twist Throttle with LCD Display and Key Lock for Electric Vehicles. The 24V Twist Throttle with LCD Display and Key Lock is a premium accessory designed for electric bicycles and scooters, offering riders enhanced control, security, and real-time battery monitoring. This throttle integrates seamlessly with 24V systems, providing a reliable and user-friendly interface for electric vehicle enthusiasts."
+},
+
+{
+  id: "p095",
+  category: "Miscellaneous",
+  name: "BRAKESHOE 110 MM WITH BOX",
+  price: 110,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p095.jpg",
+  description: "BRAKESHOE 110MM WITH BOX (YELLOW) – High-Performance Braking for Electric Scooters. Ensuring optimal braking performance is crucial for the safety and reliability of your electric scooter. The Brake Shoe 110mm with Box Yellow is a premium component designed to provide superior stopping power and durability."
+},
+
+{
+  id: "p096",
+  category: "Miscellaneous",
+  name: "BRAKE CABLE [HD 82 INCH] (HEAVY)",
+  price: 90,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p096.jpg",
+  description: "BRAKE CABLE HD 82 INCH for Electric Scooter – Heavy-Duty Braking Performance. The BRAKE CABLE HD 82 INCH is a high-quality, heavy-duty brake cable designed for electric scooters, e-bikes, and mopeds. Built for durability and precision braking, this cable ensures smooth, responsive, and reliable stopping power in all riding conditions."
+},
+
+{
+  id: "p097",
+  category: "Controllers & Wires",
+  name: "BRAKE SENSOR WIRE",
+  price: 50,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p097.jpg",
+  description: "BRAKE SENSOR WIRE"
+},
+
+{
+  id: "p098",
+  category: "EV Lithium ION Chargers",
+  name: "84V 6A Lithium EV Charger for NMC Battery (1 Year Warranty)",
+  price: 2550,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p098.jpg",
+  description: "The AQ 72V 6A Electric Vehicle Lithium Ion Battery Charger is a powerful and efficient charging solution for 60-volt lithium ion batteries used in electric vehicles (EVs). Whether you're powering electric scooters, e-bikes, or other battery-operated vehicles, this charger delivers quick, reliable, and safe charging while protecting the battery from potential damage. Equipped with smart charging technology, the AQ 72V 6A charger ensures consistent voltage and current output, minimizing the risk of overcharging, overheating, or short circuits. With a compact and durable design, it is perfect for both home and professional use, providing safe and efficient battery maintenance."
+},
+
+{
+  id: "p099",
+  category: "Lithium Batteries",
+  name: "48V 31.5Ah NMC Series 13S 7P Battery Pack",
+  price: 22500,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p099.jpg",
+  description: "48V 30Ah NMC Series 13S 7P Battery Pack"
+},
+
+{
+  id: "p100",
+  category: "Controllers & Wires",
+  name: "AMPR 2+4 MALE 6 WIRE CAN L-500MM",
+  price: 950,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p100.jpg",
+  description: "Chogori AMPR 2+4 Male CAN Connector with 6 Wires (500mm Cable) – High-Performance"
+},
+{
+  id: "p101",
+  category: "Controllers & Wires",
+  name: "AMPR 2+4 MALE with 2 Wire",
+  price: 799,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p101.jpg",
+  description: "AMPR 2+4 male connector with 2-wire cable designed for electric vehicle battery packs, controllers, and CAN communication systems. Provides a secure electrical connection with reliable signal transmission."
+},
+
+{
+  id: "p102",
+  category: "Miscellaneous",
+  name: "MOTOR 10 INCH 1100W DRUM",
+  price: 5650,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p102.jpg",
+  description: "High-performance 10-inch 1100W drum hub motor for electric scooters. Designed for smooth acceleration, excellent torque, energy efficiency, and long service life."
+},
+
+{
+  id: "p103",
+  category: "Miscellaneous",
+  name: "WHEEL RIM [DISC 300-10]",
+  price: 1800,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p103.jpg",
+  description: "Durable 300-10 disc wheel rim for electric scooters. Manufactured for strength, stability, and reliable performance under everyday riding conditions."
+},
+
+{
+  id: "p104",
+  category: "Miscellaneous",
+  name: "EV Throttle (OK TYPE 123+R)",
+  price: 179,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p104.jpg",
+  description: "OK Type 123+R electric vehicle throttle with smooth acceleration control and reverse function. Designed for electric scooters and e-rickshaws."
+},
+
+{
+  id: "p105",
+  category: "Miscellaneous",
+  name: "10A with USB TRANSVERTOR",
+  price: 320,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p105.jpg",
+  description: "10A DC converter with integrated USB output for electric vehicles. Converts battery voltage into a stable output for accessories while providing convenient USB charging."
+},
+
+{
+  id: "p106",
+  category: "Miscellaneous",
+  name: "BRAKE CABLE [NORMAL 74 INCH]",
+  price: 80,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p106.jpg",
+  description: "74-inch standard brake cable for electric scooters. Provides smooth braking operation, reliable performance, and long-lasting durability."
+},
+
+{
+  id: "p107",
+  category: "Miscellaneous",
+  name: "HOSE PIPE [FRONT 38 INCH]",
+  price: 180,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p107.jpg",
+  description: "38-inch front brake hose pipe for electric scooters. Built for dependable hydraulic brake performance with durable construction and secure fitment."
+},
+
+{
+  id: "p108",
+  category: "EV Lithium ION Chargers",
+  name: "60V 3A Lead Acid EV Charger",
+  price: 590,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p108.jpg",
+  description: "60V 3A lead-acid battery charger for electric scooters and other electric vehicles. Designed to provide safe, efficient charging with built-in protection against overcharging and overheating."
+},
+
+{
+  id: "p109",
+  category: "EV Lithium ION Chargers",
+  name: "54.6V 15A Lithium Charger for E-Rikshaw",
+  price: 3495,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p109.jpg",
+  description: "54.6V 15A lithium battery charger for electric rickshaws and 48V lithium battery packs. Delivers fast, stable, and efficient charging with advanced safety protection."
+},
+
+{
+  id: "p110",
+  category: "Miscellaneous",
+  name: "DISC PAD [DP01 COMMON]",
+  price: 80,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p110.jpg",
+  description: "DP01 common disc brake pad for electric scooters. Manufactured to provide dependable stopping power, low wear, and reliable braking performance."
+},
+{
+  id: "p111",
+  category: "Miscellaneous",
+  name: "DISC PAD [DP101 HEAVY]",
+  price: 99,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p111.jpg",
+  description: "DISC PAD DP101 HEAVY for Electric Scooter – High-Performance Heavy-Duty Brake Pads"
+},
+
+{
+  id: "p112",
+  category: "Miscellaneous",
+  name: "DISC PAD [DP11 ATH REAR]",
+  price: 110,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p112.jpg",
+  description: "DISC PAD DP11 ATH REAR for Electric Scooter – Enhanced Rear Braking for Superior Control"
+},
+
+{
+  id: "p113",
+  category: "Miscellaneous",
+  name: "DISC PAD [DP13 OLA REAR]",
+  price: 110,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p113.jpg",
+  description: "DISC PAD DP13 OLA REAR – High-Performance Rear Brake Pad for Electric Scooters"
+},
+
+{
+  id: "p114",
+  category: "Miscellaneous",
+  name: "DISC PAD [DP12 OLA FRONT]",
+  price: 140,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p114.jpg",
+  description: "DISC PAD DP12 OLA FRONT for Electric Scooter – Precision Braking for Maximum Safety"
+},
+
+{
+  id: "p115",
+  category: "Miscellaneous",
+  name: "DISC PUMP [LEFT]",
+  price: 350,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p115.jpg",
+  description: "DISC PUMP LEFT for Electric Scooter – High-Performance Hydraulic Braking System"
+},
+
+{
+  id: "p116",
+  category: "Miscellaneous",
+  name: "DISC PUMP [RIGHT]",
+  price: 350,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p116.jpg",
+  description: "DISC PUMP RIGHT for Electric Scooter – High-Performance Hydraulic Braking System"
+},
+
+{
+  id: "p117",
+  category: "Miscellaneous",
+  name: "DISC PLATE ROUND 180 MM",
+  price: 350,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p117.jpg",
+  description: "DISC PLATE ROUND 180MM for Electric Scooter – High-Performance Braking for Maximum Safety"
+},
+
+{
+  id: "p118",
+  category: "Controllers & Wires",
+  name: "OKW CAN 2+4 PIN MALE 6 WIRE L-500MM",
+  price: 499,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p118.jpg",
+  description: "OKW CAN 2+4 PIN Male Connector with 6 Wires (500mm Cable) – Reliable Data & Power Transmission. The OKW CAN 2+4 PIN Male Connector with 6 wires and a 500mm cable is a high-quality, durable, and efficient connector designed for CAN bus communication, electric vehicles (EVs), Battery Management Systems (BMS), and other power and data transmission applications. Its secure connection, weather-resistant build, and pre-attached wires make it ideal for industrial and automotive environments."
+},
+
+{
+  id: "p119",
+  category: "EV Lithium ION Chargers",
+  name: "IMPORTED 48V 3A Lead Acid EV Charger",
+  price: 790,
+  unit: "PCS",
+  minQty: 1,
+  stock: true,
+  image: "images/products/p119.jpg",
+  description: "IMPORTED 48V 3A Electric Vehicle Lead-Acid Battery Charger. The 48V 3A Electric Vehicle Lead-Acid Battery Charger is a reliable and efficient charging solution designed for 48-volt lead-acid battery systems commonly found in electric scooters, bikes, and other electric vehicles (EVs). This charger ensures optimal battery performance and longevity, making it an essential accessory for EV owners."
+},
 
 ]
 };
